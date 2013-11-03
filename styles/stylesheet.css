@@ -1,0 +1,668 @@
+/*
+ * Author: Sari Haj Hussein
+ */
+body {
+	margin: 0;
+	padding: 0;
+	background-color: #2f5e8e;
+	font-family: helvetica; 
+	font-size: 12px; 
+	color: #3e3e3e; 
+	line-height: 1.4em;
+}
+
+.main {
+	width: 1024px;
+	height: auto;
+	overflow: auto;
+	margin: 0 auto 20px auto;
+	padding-bottom: 20px;
+	background-color: #f5f5f5;
+	box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.25);
+	-moz-box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.25);
+	-webkit-box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.25);
+}
+
+.mainlogin {
+	width: 600px;
+	height: 430px;
+	overflow: hidden;
+}
+
+#banner {
+	display: block;
+	font-family: 'Open Sans', sans-serif; 
+    color: white; 
+    font-size: 46pt; 
+    text-align: center;
+	line-height: 110%;
+	font-weight: 300;
+	margin-bottom: 20px;
+	white-space: nowrap;
+}
+
+#navigation {
+	height: 60px;
+	margin-bottom: 15px;
+	list-style: none;
+	padding: 0;
+	text-align: center;
+	white-space: nowrap;
+	background-color: #f5f5f5;
+	box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.25);
+	-moz-box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.25);
+	-webkit-box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.25);
+}
+
+#navigation li {
+	display: inline;
+	font-family: 'Open Sans Condensed';
+	font-size: 23pt;
+	font-weight: bold;	
+	font-color: black;
+}
+
+#navigation a {
+	display: inline-block;
+	padding: 20px;
+	color: black;
+	text-decoration: none;
+}
+
+#spacer {	
+	height: 25px;
+	padding-top: 10px;
+	background-color: #f5f5f5;
+}
+
+#optionbar {
+	background-color: #688aac;
+	height: 90px;
+	box-shadow: inset 0px 3px 11px 0px rgba(0, 0, 0, 0.65);
+	-moz-box-shadow: inset 0px 3px 11px 0px rgba(0, 0, 0, 0.65);
+	-webkit-box-shadow: inset 0px 3px 11px 0px rgba(0, 0, 0, 0.65);
+}
+
+/* View Tickets Page (index) */
+
+#datepicker {
+	float: left;
+	margin-top: 17px;
+	margin-left: 50px;
+}
+
+#datepicker input[type='text']{
+	border-radius: 6px;
+	height: 26px;
+	border: 1px solid #ccc;
+	background-color: white;
+	font-size: 14px;
+	width: 200px;
+	margin-bottom: 10px;
+}
+
+#datepicker label {
+	display: inline-block;
+	width: 35px;
+	margin-right: 12px;
+	font-family: 'Open Sans';
+	font-size: 10pt;
+	color: white;
+	font-weight: 600;
+}
+
+.viewtickets {
+	min-height: 600px;
+}
+
+
+#tickettable {
+	table-layout: fixed;
+	white-space:nowrap;
+	border-collapse: collapse;
+	width: 98%;
+	font-family: 'Open Sans'; font-size: 13pt; color: black; font-weight: 500;
+;
+	margin: 10px;
+}
+
+#tickettable tr {
+	height: 30px;
+}
+
+#tickettable td,th {
+	text-align: left;
+	padding-left: 8px;
+	overflow:hidden;
+	border-bottom: 1px solid #ccc;
+}
+
+#tickettable tbody tr:hover {
+	color: white;
+	background-color: #688aac;
+	cursor: pointer;
+}
+
+#tickettable a {
+	color: #3E3E3E;
+	text-decoration: none;
+}
+
+th.time {
+	width: 15%;
+}
+
+th.status {
+	width: 10%;
+}
+
+th.subject {
+	width: 60%;
+}
+
+td.Open {
+	color: green;
+}
+
+td.Pending {
+	color: #FFD700;
+}
+
+td.Closed {
+	color: red;
+}
+
+/* View Ticket Page */
+#ticketinfo {
+	width: 100%;
+	table-layout: fixed;
+	padding: 10px;
+	padding-top: 20px;
+	font-family: 'Open Sans'; font-size: 13pt; color: white; font-weight: 500;
+}
+
+td.infolabel {
+	width: 12%;
+	text-align: left;
+	padding-right: 10px;
+}
+
+td.infodata {
+	width: 25%;
+}
+
+#subjectline {
+	font-family: 'Open Sans'; font-size: 14pt; color: black; font-weight: 400;
+	line-height: 1.25em;
+	margin-top: 10px;
+	padding-left: 10px;
+	padding-bottom: 5px;
+	border-bottom: 1px solid black;
+}
+
+#replytext {
+	font-family: 'Open Sans'; font-size: 14pt; color: black; font-weight: 400;
+	line-height: 1.25em;
+	padding-top: 8px;
+	padding-left: 30px;
+	padding-bottom: 5px;
+}
+
+
+#tickettext {
+	margin-bottom: 20px;
+	margin-top: 20px;
+	background-color: #ececec;
+	-webkit-box-shadow:  0px 0px 6px 1px rgba(0, 0, 0, 0.4);
+	box-shadow:  0px 0px 6px 1px rgba(0, 0, 0, 0.4);
+    padding-bottom: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    overflow: auto;
+}
+
+.userreply {
+	float: right;
+	width: 80%;
+	clear: both;
+	margin-bottom: 20px;
+	margin-right: 20px;
+	background-color: #dde3ff;
+	-webkit-box-shadow:  0px 0px 6px 1px rgba(0, 0, 0, 0.4);
+	box-shadow:  0px 0px 6px 1px rgba(0, 0, 0, 0.4);
+}
+
+.staffreply {
+	margin-left: 20px;
+	float: left;
+	width: 80%;
+	clear: both;
+	margin-bottom: 20px;
+	background-color: #ececec;
+	-webkit-box-shadow:  0px 0px 6px 1px rgba(0, 0, 0, 0.4);
+	box-shadow:  0px 0px 6px 1px rgba(0, 0, 0, 0.4);
+}
+
+.nametext {
+	margin-top: 10px;
+	margin-left: 20px;
+	display: block;
+	float: left;
+	font-family: 'Open Sans'; font-size: 12pt; color: black; font-weight: 400;
+}
+
+.datetext {
+	margin-top: 10px;
+	margin-right: 20px;
+	display: block;
+	float: right;
+	font-family: 'Open Sans'; font-size: 12pt; color: black; font-weight: 400;
+}
+
+.text {
+	padding-left: 20px;
+	padding-top: 20px;
+	padding-right: 20px;
+	margin-bottom: 20px;
+	display: block;
+	font-family: 'Open Sans'; font-size: 12pt; color: black; font-weight: 400;
+	clear: both;
+}
+
+.replybox {
+	clear: both;
+	background-color: #ececec;
+	-webkit-box-shadow:  0px 0px 6px 1px rgba(0, 0, 0, 0.4);
+	box-shadow:  0px 0px 6px 1px rgba(0, 0, 0, 0.4);
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+	margin-top: 5px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.admintools {
+	clear: both;
+	background-color: #ececec;
+	-webkit-box-shadow:  0px 0px 6px 1px rgba(0, 0, 0, 0.4);
+	box-shadow:  0px 0px 6px 1px rgba(0, 0, 0, 0.4);
+    padding: 5px;
+    margin-bottom: 20px;
+	margin-top: 5px;
+    margin-left: 20px;
+    margin-right: 20px;
+    height: 22px;
+}
+
+textarea.replyinput
+{
+	height: 200px;
+	width: 924px;
+	margin: 5px 30px 10px 30px;
+}
+
+/* Profile Page */
+#profileform {
+	float: left;
+	width: 55%;
+	height: 500px;
+	padding: 10px;
+	outline: 1px solid #474747;
+	margin-left: 20px;
+	margin-top: 20px;
+}
+
+#profileone {
+	float: left;
+	width: 43%;
+	height: 80%;
+	margin-top: 10px;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+#profiletwo {
+	float: right;
+	width: 43%;
+	height: 80%;
+	margin-top: 10px;
+	margin-right: 20px;
+	margin-left: 10px;
+}
+
+#passwordform {
+	float: right;
+	width: 35%;
+	height: 500px;
+	padding: 10px;
+	outline: 1px solid #474747;
+	margin-top: 20px;
+	margin-right: 20px;
+}
+
+#passwordone
+{
+	margin-top: 10px;
+	margin-left: 20px;
+	margin-right: 20px;
+	height: 82%;
+	width: auto;
+}
+
+#profileforms label {
+	display: block;
+	font-weight: bold;
+	float: left;
+	text-align: right;
+	clear: both;
+	margin-bottom: 15px;
+	width: 72px;
+}
+
+#passwordone label {
+	width: 105px;
+}
+
+#passwordone input {
+	width: 198px !important;
+}
+
+#loginformspec label {
+	width: 106px;
+}
+
+#loginformspec input {
+	width: 280px !important;
+}
+
+#profileforms input[type="text"], input[type="password"], input[type="email"], input[type="url"] {
+	border: solid 1px #688AAC;
+	width: 154px;
+	font-size: 12px;
+	padding: 4px 2px;
+	margin-right: 5px;
+	float: right;
+	margin-bottom: 15px;
+}
+
+#profileforms .small{
+	color:#666666;
+	display:block;
+	font-size:11px;
+	font-weight: normal;
+	text-align: right;
+}
+
+#profileforms input[type="submit"] {
+	display: block;
+	width: 70px;
+	height:28px;
+	text-align:center;
+	font-size: 12px;
+	box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.0976562);
+	background-color: #688aac;
+	border: 1px solid #999;
+	color: white;
+	font-family: 'Open Sans';
+	font-weight: 400;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+/* View bar*/
+
+#filterbox {
+	float: left;
+	height: 62px;
+	width: 100px;
+	background-color: #7394b6;
+	border-radius: 6px;
+	margin: 10px;
+	padding: 9px 0px 0px 7px;
+	box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.25);
+	font-family: 'Open Sans'; font-size: 10pt; color: white; font-weight: 600;
+}
+
+#searchfield {
+	background-color: white;
+	width: 240px;
+	float: right;
+	margin-right: 10px;
+	margin-top: 30px;
+	font-size: 14px;
+	border: 1px solid #ccc;
+	height: 26px;
+	border-radius: 6px;
+}
+
+#searchimage {
+	background: url(../images/search-icon.png) no-repeat;
+	cursor: pointer;
+	display: block;
+	height: 31px;
+	width: 34px;
+	border: none;
+	float: right;
+	margin-top: 27px;
+	margin-right: 10px;
+}
+
+/* Submit Page */
+#submitselect {
+	text-align: center;
+	padding-top: 30px;
+}
+
+
+.submitboxes {
+ 	width: 160px;
+	padding: 2px;
+	font-size: 14px;
+	border: 1px solid #ccc;
+	margin-right: 20px;
+}
+
+#submittable {
+	table-layout: fixed;
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 22px;
+	border: 1px black;
+}
+
+.submitinput  {
+	width: 100%;
+	font-family: helvetica;
+}
+
+textarea.submitinput
+{
+	height: 400px;
+}
+
+td.submitlabel{
+	width: 10%;
+	text-align: right;
+	vertical-align: top;
+	margin-right: 5px;
+}
+
+td.submitfield{
+	width: 90%;
+}
+
+.submitbutton {
+		box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.0976562);
+		background-color: #688aac;
+		border: 1px solid #999;
+		color: white;
+		font-family: 'Open Sans';
+		font-size: 14px;
+		font-weight: 400;
+		padding: 0px 11px;
+		height: 22px;
+}
+
+/* Login page */
+
+#loginbar {
+		height: 40px;
+		background-color: #f5f5f5;
+		box-shadow: 0px 5px 10px -3px rgba(0, 0, 0, 0.6);
+		text-align: center;
+}	
+
+.loginbuttons {
+	display: inline-block;
+	height: 30px;
+	padding-top: 10px;
+	width: 90px;
+	font-family: 'Open Sans Condensed'; font-size: 16pt; font-weight: 600;
+	color: white;
+	text-align: center;
+}
+
+.loginbutton {
+	background-color: #49729b;
+}
+
+.resetbutton {
+	background-color: #49729b;
+	width: 147px;
+}
+
+.registerbutton {
+	background-color: transparent;
+	color: black;
+}
+
+.loginforms {
+	width: 400px;
+	height: 90%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 20px;
+	padding-left: 50px;
+	padding-right: 50px;
+}
+
+.loginform {
+	display: block;
+}
+
+.registerform
+{
+	display: none;
+}
+
+.blueseperator {
+	height: 1px;
+	width: auto;
+	margin-top: 10px;
+	border-bottom: solid 1px #49729B;
+}
+
+/* Admin page */
+
+#departmentform {
+	float: right;
+	width: 35%;
+	height: 200px;
+	padding: 10px;
+	outline: 1px solid #474747;
+	margin-top: 20px;
+	margin-right: 20px;
+}
+
+#productform {
+	float: right;
+	width: 35%;
+	height: 200px;
+	padding: 10px;
+	outline: 1px solid #474747;
+	margin-top: 20px;
+	margin-right: 20px;
+}
+
+
+/* General */
+
+.notification {
+	width: 80%;
+	border: 1px solid #999;
+	text-align: center;
+	margin: 10px auto 0px auto;
+	padding: 5px 0;
+	font-family: 'helvetica'; font-size: 11pt; color: black; font-weight: 300;
+	line-height: 1.15em;
+}
+
+.success {
+	background-color: #DFF2BF;
+}
+
+.error {
+	background-color: #FF9494;
+}
+
+.whitemedium {
+	font-family: 'Open Sans'; font-size: 16pt; color: white; font-weight: 300;
+}
+
+.greymedium {
+	font-family: 'Open Sans Condensed';
+	font-size: 17pt;
+	color: #636363;
+	font-weight: bold;
+}
+
+.greysmall {
+	font-size: 11px;
+	color: #666;
+}
+
+.blacklarge {
+	font-family: 'Open Sans Condensed';
+	font-size: 23pt;
+	font-weight: bold;
+	text-align: center;
+	text-decoration:underline
+}
+
+.blacksmall {
+	font-family: 'Open Sans Condensed';
+	font-size: 16pt;
+	font-weight: bold;
+	text-align: center;
+}
+
+.blackmedium {
+	font-family: 'Open Sans'; font-size: 16pt; color: black; font-weight: 300;
+}
+
+.blacksmallbold {
+	font-family: 'Open Sans'; font-size: 13pt; color: black; font-weight: 500;
+}
+
+.blacklink {
+	text-decoration: none;
+	color: black;
+}
+
+.blacklink a:hover{
+	text-decoration: underline;
+}
+
+.greytext {
+	font-family: 'Open Sans Condensed'; 
+	font-size: 17pt; 
+	color: #636363;
+	font-weight:bold;
+}
+
+form {
+	margin: 0;
+	padding: 0;
+}
