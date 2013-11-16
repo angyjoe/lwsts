@@ -1,5 +1,5 @@
-Lightweight Support Ticket System
-=================================
+# Lightweight Support Ticket System
+
 ### Admin Interface
 ![Admin Interface](./screenshots/Admin%20Interface.jpg)
 
