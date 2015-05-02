@@ -1,27 +1,50 @@
 # Lightweight Support Ticket System
 
+## Introduction
+
+This is a lightweight support ticket system that focuses on ease of use and efficiency.
+
+## Ingredients
+The Lightweight Support Ticket System uses the following software components:
+
+1. PHP 4.0 or higher
+
 ## Screenshots
 
-### Admin Interface
+#### Admin Interface
 ![Admin Interface](./screenshots/Admin%20Interface.jpg)
 
-### Create Ticket Interface
+#### Create Ticket Interface
 ![Create Ticket Interface](./screenshots/Create%20Ticket%20Interface.jpg)
 
-### Login Interface
+#### Login Interface
 ![Login Interface](./screenshots/Login%20Interface.jpg)
 
-### Register Interface
+#### Register Interface
 ![Register Interface](./screenshots/Register%20Interface.jpg)
 
-### View Tickets Interface
+#### View Tickets Interface
 ![View Tickets Interface](./screenshots/View%20Tickets%20Interface.jpg)
+
+## Q&A
+
+Post your questions to the [Lightweight Support Ticket System mailing list](https://lists.sourceforge.net/lists/listinfo/lwsts-list).
 
 ## Licence
 
-This software is licensed under the **[GNU General Public License Version 3](./LICENSE)**.
-
 Copyright &copy; 2013 **[Sari Haj Hussein](http://sarihh.info)**.
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+[http://www.apache.org/licenses/LICENSE-2.0](http://www.apache.org/licenses/LICENSE-2.0)
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
 
 ## Code Disclaimer
 
