@@ -32,7 +32,7 @@ Post your questions to the [Lightweight Support Ticket System mailing list](http
 
 ## Licence
 
-Copyright &copy; 2013 **[Sari Haj Hussein](http://sarihh.info)**.
+Copyright &copy; **[Sari Haj Hussein](http://sarihh.info)**.
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
